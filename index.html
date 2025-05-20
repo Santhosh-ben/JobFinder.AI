@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JobFinder.AI</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">JobFinder<span>.AI</span></div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Jobs</a>
+      <a href="#">Profile</a>
+      <a href="#">Login</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Find Your Dream Job</h1>
+    <p>Powered by Smart AI Suggestions</p>
+    <button onclick="scrollToJobs()">Explore Jobs</button>
+  </section>
+
+  <section class="filters">
+    <input type="text" id="search" placeholder="Search by title..." />
+    <select id="location">
+      <option value="">All Locations</option>
+      <option value="Remote">Remote</option>
+      <option value="New York">New York</option>
+    </select>
+    <select id="level">
+      <option value="">All Levels</option>
+      <option value="Junior">Junior</option>
+      <option value="Mid">Mid</option>
+      <option value="Senior">Senior</option>
+    </select>
+    <button onclick="applyFilters()">Apply Filters</button>
+  </section>
+
+  <section class="jobs" id="job-suggestions">
+    <!-- Job suggestions will appear here -->
+  </section>
+
+  <footer>
+    <p>&copy; 2025 JobFinder.AI | All rights reserved</p>
+  </footer>
+</body>
+</html>
